@@ -1,0 +1,23 @@
+POST http://localhost:3333/events
+Content-Type: application/json
+
+{
+  "title": "Glow Up",
+  "details": "Evento quem quer ser mais bonito e confiante",
+  "maximumAttendees": 4
+}
+
+###
+POST http://localhost:3333/events/497a4866-2230-44ee-bbba-8be250888b49/attendees
+Content-Type: application/json
+
+{
+  "name": "Cláudio",
+  "email": "claus@gmail.com"
+}
+
+###
+GET http://localhost:3333/events/497a4866-2230-44ee-bbba-8be250888b49
+
+###
+GET http://localhost:3333/attendees/9/badge
